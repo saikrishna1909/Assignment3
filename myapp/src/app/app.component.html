@@ -1,0 +1,3 @@
+<button class="btn btn-primary" (click)="logTimes()">Display Details</button>
+<p *ngIf="showMyName">My Name is Sai Krishna</p>
+<div *ngFor="let logs of logDetails" [ngStyle]="{backgroundColor: logs>=5? 'blue':'transparent'}" [ngClass]="{'white-text':logs>=5}" > Logged Time: {{logs}}<hr></div><br>
